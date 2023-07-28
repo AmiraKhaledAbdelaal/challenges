@@ -1,0 +1,99 @@
+body{
+    background-color:#ccc ;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1024px;
+    margin: auto;
+}
+.card{
+    width: calc((100% - 60px )/ 3);
+    float: left;
+    margin: 10px;
+    background-color:#fff;
+    transition-property: scale();
+    transition-duration: 0.4s;
+    border-radius: 3px;
+}
+.container1{
+    padding:30px;
+    
+}
+.line{
+    background-color: #eee;
+    margin-bottom: 10px;
+    width: 200px;
+}
+p, strong{
+    text-align: center;
+}
+strong{
+    text-align: center;
+}
+.line, .big-line{
+    height: 3px;
+    margin: 5px auto ;
+}
+h3{
+    /* background-color: darkcyan; */
+    background-color: rgb(100 175 230);
+    text-align:center;
+    padding: 10px;
+    margin: 0;
+    border-radius: 3px;
+}
+.big-line{width: 220px;
+    background-color: #eee;
+
+}
+.bold{
+    font-size: 25px;
+}
+.card:hover{
+    transform: scale(1.08);
+}
+.result{
+    background-color:#fff;
+    margin:10px;
+    padding: 15px;
+} 
+.clear
+{
+    clear: both;
+}
+.left1{
+    float: left;
+    padding: 10px;
+}
+.rigth1{
+    float: right;
+    padding: 10px;
+}
+.full-line{
+    width: 100%;
+    position: relative;
+}
+.full-line .line-hover{
+    position: absolute;
+    width: 0%;
+    background-color: rgb(100 175 230);
+    height: 3px;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+
+.card1:hover~.result .full-line .line-hover{
+    width: 15%;
+}
+
+.card2:hover~.result .full-line .line-hover{
+    width: 30%;
+}
+.card2:hover~.result .full-line .special-hover{
+    width: 50%;
+}
+.card3:hover~.result .full-line .line-hover{
+    width: 100%;
+}
